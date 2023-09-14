@@ -6,6 +6,51 @@
   --bg-color: #ffffff;  
   --text-color:#000;
   --title-color:#000;  
+  --backdrop-start:#f9a8d4;
+  --backdrop-second: deeppink;
+  --backdrop-last:blue;
+}
+
+
+.backdrop{
+  /* absolute top-[34%] lg:top-[20%] -right-8 lg:right-auto lg:left-[42%] -translate-x-[18%]  w-64 h-56 lg:w-[780px] lg:h-96  bg-gradient-to-b from-pink-300 via-[#fa39ad] to-blue-400 blur-3xl lg:blur-[180px] 2xl:blur-[285px] -z-10 rounded-full flex items-end justify-center */
+  position: absolute;
+  top: 32%;
+  right: -16px;
+  background-image: linear-gradient(to bottom, var(--backdrop-start), var(--backdrop-second), var(--backdrop-last));
+  width: 256px;
+  height: 224px;
+  border-radius: 100%;
+  filter: blur(115px);
+  z-index: -1;
+  transform: rotate(-45deg);
+}
+
+@media (min-width:960px) {
+  .backdrop{    
+    position: absolute;
+    top: 50%;
+    right: auto;    
+    left: 50%;
+    width: 756px;
+    height: 624px;    
+    filter: blur(235px);
+    transform: translate(-35%, -10%);
+    
+  }
+}
+
+@media (min-width:1440px) {
+  .backdrop{    
+    position: absolute;
+    top: 50%;
+    right: auto;    
+    left: 50%;
+    width: 756px;
+    height: 624px;    
+    filter: blur(395px);
+    transform: translate(-35%, -10%);    
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,14 +58,21 @@
     --bg-color:#000;
     --text-color:#fff;
     --title-color:#FB1F65;    
+    --backdrop-start:#f9a8d4;
+    --backdrop-second: deeppink;
+    --backdrop-last:blue;
   }
 }
+
+
+
 
 html{
   width: 100vw;
 }
 
 body {
+  width: 100vw;
   color: var(--text-color);
   background-color: var(--bg-color);
 }
