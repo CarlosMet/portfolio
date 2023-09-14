@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <header className='absolute top-0 left-0 w-full'>
+    <header className='absolute top-0 left-0 w-full px-6 lg:px-16 xl:px-20 2xl:px-56'>
         <nav className='flex justify-between items-center [&>div]:w-4/12  py-5 lg:py-7 xl:py-9'>
             <div className='flex justify-start'>
                 logo
