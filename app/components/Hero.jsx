@@ -11,7 +11,7 @@ export default function Hero() {
     <section style={poppins.style} className='relative'>
         <div className='w-full mt-6 lg:mt-12 xl:mt-16 2xl:mt-40 flex justify-between items-center flex-col lg:flex-row'>
             <div className='w-full lg:w-6/12'> 
-                <h1 className='font-extrabold text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tighter text-[var(--title-color)] text-center lg:text-left'>
+                <h1 className='font-extrabold text-[42px] lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tighter text-[var(--title-color)] text-center lg:text-left'>
                     Hello, i'm <br />
                     <span className='text-[var(--text-color)]'>Carlos Metaute 🖐</span> 
                 </h1>
@@ -23,11 +23,11 @@ export default function Hero() {
                     <button>Download my resume</button>
                 </div>
             </div>
-            <div className='flex justify-center w-6/12'>
-                <img src="/3800_1_02-removebg-preview.png" className='w-64' alt="" />
+            <div className='flex justify-center w-full lg:w-6/12 mt-4 lg:mt-0'>
+                <img src="/3800_1_02-removebg-preview.png" className='w-56' alt="" />
             </div>
         </div>
-        <div className="absolute top-[1%] lg:top-[20%] left-1/2 lg:left-1/2 -translate-x-[18%] lg:-translate-x-1/2 w-36 h-36 lg:w-[480px] lg:h-96  bg-gradient-to-b from-[#fa39ad] via-[#fe6c4c] to-blue-400 blur-2xl lg:blur-[123px] 2xl:blur-[165px] -z-10 rounded-full flex items-end justify-center">
+        <div className="absolute top-[34%] lg:top-[20%] left-1/2 lg:left-1/2 -translate-x-[18%] lg:-translate-x-1/2 w-44 h-44 lg:w-[480px] lg:h-96  bg-gradient-to-b from-[#fa39ad] via-[#fe6c4c] to-blue-400 blur-3xl lg:blur-[123px] 2xl:blur-[165px] -z-10 rounded-full flex items-end justify-center">
             
         </div>
     </section>
