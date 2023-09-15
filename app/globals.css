@@ -22,19 +22,49 @@
   height: 224px;
   border-radius: 100%;
   filter: blur(115px);
-  z-index: -1;
-  transform: rotate(-45deg);
+  z-index: -1;  
+}
+
+.tapa{
+  transform-origin: right center;
+  animation: mailbox 1s ease-in forwards;  
+}
+
+.carta{
+  left: -64px;  
+  animation: moveMail forwards 1s ease-in;
+}
+
+@keyframes moveMail{
+  0%{
+    left: -64px;
+  }    
+  100%{
+    left:16px;
+  }
+
+}
+
+
+@keyframes mailbox{
+  0%{
+    transform: rotate(0deg) translateX(1px);
+  }    
+  100%{
+    transform: rotate(90deg) translateX(1px);
+  }
+
 }
 
 @media (min-width:960px) {
   .backdrop{    
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: auto;    
     left: 50%;
-    width: 756px;
-    height: 624px;    
-    filter: blur(295px);
+    width: 556px;
+    height: 424px;    
+    filter: blur(215px);
     transform: translate(-35%, -10%);
     
   }
@@ -75,4 +105,6 @@ body {
   width: 100vw;
   color: var(--text-color);
   background-color: var(--bg-color);
+  overflow-x: hidden !important;
+  margin: 0;
 }
